@@ -4,7 +4,7 @@ pcm.dsnooper {
     ipc_key_add_uid 0
     ipc_perm 0666
     slave {
-        pcm "hw:1,0"
+        pcm "hw:2,0"
         channels 1
     }
 }
@@ -13,7 +13,7 @@ pcm.!default {
         type asym
         playback.pcm {
                 type plug
-                slave.pcm "hw:0,0"
+                slave.pcm "hw:1,0"
         }
         capture.pcm {
                 type plug
